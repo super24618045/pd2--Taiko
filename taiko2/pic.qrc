@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/pics1">
+        <file>img/front.png</file>
+        <file>img/bg.png</file>
+        <file>img/game.jpg</file>
+        <file>img/mtaikoflash_red.png</file>
+    </qresource>
+    <qresource prefix="/pics2">
+        <file>img/blue.jpeg</file>
+        <file>img/newbg.jpeg</file>
+        <file>img/red.jpeg</file>
+    </qresource>
+</RCC>
