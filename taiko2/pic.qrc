@@ -4,6 +4,8 @@
         <file>img/bg.png</file>
         <file>img/game.jpg</file>
         <file>img/mtaikoflash_red.png</file>
+        <file>img/blue.png</file>
+        <file>img/red.png</file>
     </qresource>
     <qresource prefix="/pics2">
         <file>img/blue.jpeg</file>

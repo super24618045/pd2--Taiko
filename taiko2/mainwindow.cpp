@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->label_2->hide();
     ui->record->hide();
     ui->lcdNumber->hide();
-
+    ui->label_3->hide();
     //hide drum
     ui->blue->hide();
     ui->blue_2->hide();
@@ -99,9 +99,9 @@ void MainWindow::on_pushButton_2_clicked()
 
     count=10;
     score=0;
-    ok=false;
-    //
 
+    //
+    ok=false;
 
    // if(repeat==0)
   //  {
@@ -129,6 +129,7 @@ void MainWindow::countdown()
 
     count--;
     ui->lcdNumber->display(count);
+
     if(count<=0&&ok==true){
         ui->lcdNumber->hide();
         ui->pushButton->show();
@@ -138,7 +139,7 @@ void MainWindow::countdown()
         ui->label->show();
         ui->record->display(score);
         ui->record->show();
-
+        ui->label_3->show();
     }
 
 }
@@ -156,7 +157,8 @@ void MainWindow::move()
             }
         if(count<=0)
         {
-            ui->blue->hide();ok=true;
+            ui->blue->hide();
+            ok=true;
         }
     }
 }
@@ -173,7 +175,8 @@ void MainWindow::move2()
             }
         if(count<=0)
             {
-            ui->blue_2->hide();ok=true;
+            ui->blue_2->hide();
+            ok=true;
             }
     }
 }
@@ -191,7 +194,8 @@ void MainWindow::move3()
         }
         if(count<=0)
         {
-            ui->blue_3->hide();ok=true;
+            ui->blue_3->hide();
+            ok=true;
         }
     }
 }
@@ -210,7 +214,8 @@ void MainWindow::move_r()
             }
         if(count<=0)
         {
-            ui->red->hide();ok=true;
+            ui->red->hide();
+            ok=true;
         }
     }
 }
@@ -227,7 +232,8 @@ void MainWindow::move_r2()
             }
         if(count<=0)
         {
-            ui->red_2->hide();ok=true;
+            ui->red_2->hide();
+            ok=true;
         }
     }
 }

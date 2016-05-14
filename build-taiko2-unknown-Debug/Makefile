@@ -317,10 +317,12 @@ qrc_pic.cpp: ../taiko2/pic.qrc \
 		../taiko2/img/red.jpeg \
 		../taiko2/img/blue.jpeg \
 		../taiko2/img/newbg.jpeg \
+		../taiko2/img/blue.png \
 		../taiko2/img/game.jpg \
 		../taiko2/img/front.png \
 		../taiko2/img/mtaikoflash_red.png \
-		../taiko2/img/bg.png
+		../taiko2/img/bg.png \
+		../taiko2/img/red.png
 	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc -name pic ../taiko2/pic.qrc -o qrc_pic.cpp
 
 compiler_moc_header_make_all: moc_mainwindow.cpp
