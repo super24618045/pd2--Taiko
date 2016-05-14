@@ -50,6 +50,7 @@ private:
     QTimer timer;
     QTimer drum_count;
     QTimer timer_blue;
+    bool ok;
 };
 
 #endif // MAINWINDOW_H

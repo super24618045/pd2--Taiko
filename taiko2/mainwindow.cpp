@@ -97,17 +97,18 @@ void MainWindow::on_pushButton_2_clicked()
     ui->blue_2->setGeometry(440,100,70,70);
     ui->blue_3->setGeometry(440,100,70,70);
 
-    count=30;
+    count=10;
     score=0;
-//
+    ok=false;
+    //
 
 
-    if(repeat==0)
-    {
+   // if(repeat==0)
+  //  {
         timer.start(1000);
         drum_count.start(5);
         timer_blue.start(300);
-    }
+  //  }
     ui->lcdNumber->setDigitCount(2);
     ui->lcdNumber->display(count);
     ui->record->setDigitCount(2);
@@ -115,7 +116,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 
 
-     if(count<=0)
+     if(count<=0&&ok==true)
      {
         timer.stop();
         drum_count.stop();
@@ -128,7 +129,7 @@ void MainWindow::countdown()
 
     count--;
     ui->lcdNumber->display(count);
-    if(count<=0){
+    if(count<=0&&ok==true){
         ui->lcdNumber->hide();
         ui->pushButton->show();
         ui->pushButton_2->show();
@@ -155,7 +156,7 @@ void MainWindow::move()
             }
         if(count<=0)
         {
-            ui->blue->hide();
+            ui->blue->hide();ok=true;
         }
     }
 }
@@ -172,7 +173,7 @@ void MainWindow::move2()
             }
         if(count<=0)
             {
-            ui->blue_2->hide();
+            ui->blue_2->hide();ok=true;
             }
     }
 }
@@ -190,7 +191,7 @@ void MainWindow::move3()
         }
         if(count<=0)
         {
-            ui->blue_3->hide();
+            ui->blue_3->hide();ok=true;
         }
     }
 }
@@ -209,7 +210,7 @@ void MainWindow::move_r()
             }
         if(count<=0)
         {
-            ui->red->hide();
+            ui->red->hide();ok=true;
         }
     }
 }
@@ -226,7 +227,7 @@ void MainWindow::move_r2()
             }
         if(count<=0)
         {
-            ui->red_2->hide();
+            ui->red_2->hide();ok=true;
         }
     }
 }
@@ -245,6 +246,7 @@ void MainWindow::move_r3()
         if(count<=0)
         {
             ui->red_3->hide();
+            ok=true;
         }
     }
 }
