@@ -93,11 +93,11 @@ void MainWindow::on_pushButton_2_clicked()
     ui->label_2->show();
     ui->lcdNumber->show();
     //SET BLUE
-    ui->blue->setGeometry(5100,100,70,70);
-    ui->blue_2->setGeometry(5100,100,70,70);
+    ui->blue->setGeometry(510,100,70,70);
+    ui->blue_2->setGeometry(510,100,70,70);
     ui->blue_3->setGeometry(510,100,70,70);
 
-    count=10;
+    count=30;
     score=0;
 
     //
