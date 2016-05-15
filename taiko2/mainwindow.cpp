@@ -93,9 +93,9 @@ void MainWindow::on_pushButton_2_clicked()
     ui->label_2->show();
     ui->lcdNumber->show();
     //SET BLUE
-    ui->blue->setGeometry(440,100,70,70);
-    ui->blue_2->setGeometry(440,100,70,70);
-    ui->blue_3->setGeometry(440,100,70,70);
+    ui->blue->setGeometry(5100,100,70,70);
+    ui->blue_2->setGeometry(5100,100,70,70);
+    ui->blue_3->setGeometry(510,100,70,70);
 
     count=10;
     score=0;
@@ -152,7 +152,7 @@ void MainWindow::move()
 
         if(bl_index==1)
             {
-            ui->blue->setGeometry(440,100,70,70);
+            ui->blue->setGeometry(510,100,70,70);
             ui->blue->show();
             }
         if(count<=0)
@@ -170,7 +170,7 @@ void MainWindow::move2()
     {
         if(bl_index==2)
             {
-            ui->blue_2->setGeometry(440,100,70,70);
+            ui->blue_2->setGeometry(510,100,70,70);
             ui->blue_2->show();
             }
         if(count<=0)
@@ -189,7 +189,7 @@ void MainWindow::move3()
     {
         if(bl_index==3)
         {
-        ui->blue_3->setGeometry(440,100,70,70);
+        ui->blue_3->setGeometry(510,100,70,70);
         ui->blue_3->show();
         }
         if(count<=0)
@@ -209,7 +209,7 @@ void MainWindow::move_r()
 
         if(bl_index==4)
             {
-            ui->red->setGeometry(440,100,70,70);
+            ui->red->setGeometry(510,100,70,70);
             ui->red->show();
             }
         if(count<=0)
@@ -227,7 +227,7 @@ void MainWindow::move_r2()
     {
         if(bl_index==5)
             {
-            ui->red_2->setGeometry(440,100,70,70);
+            ui->red_2->setGeometry(510,100,70,70);
             ui->red_2->show();
             }
         if(count<=0)
@@ -246,7 +246,7 @@ void MainWindow::move_r3()
         if(bl_index==6)
             {
             //check_ready[5]=false;
-            ui->red_3->setGeometry(440,100,70,70);
+            ui->red_3->setGeometry(510,100,70,70);
             ui->red_3->show();
             }
         if(count<=0)
